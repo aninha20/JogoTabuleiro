@@ -1,11 +1,18 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <!-- LINKS -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" href="./Favicon/favicon-16x16.png">
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- Main JS -->
+     <script src="https://unpkg.com/feather-icons"></script>
+     <script defer src="./Js/script.js"></script>
+     <script defer src="./Js/pagina.js"></script>
+
     <title>Pokémon Board Game</title>
 </head>
 <body>
@@ -24,45 +31,95 @@
         </nav>
 
     </header>
-    <div class="content">
-        <div class="slides">
-            <input type="radio" name="slide" id="slide1" checked>
-            <input type="radio" name="slide" id="slide2">
-            <input type="radio" name="slide" id="slide3">
-            <input type="radio" name="slide" id="slide4">
-            <input type="radio" name="slide" id="slide5">
+    <div class="nav">
+        <main>
+            <img src="#" alt="pokemon" class="pokemon_imagem">
+            <h1 class="pokemon_data">
+                <span class="pokemon_number"></span> -
+                <span class="pokemon_name"></span>
+            </h1>
+    
+            <form class="form">
+                <input 
+                type="search"
+                class="input_search"
+                placeholder="Name or Number"
+                required>
+            </form>
+    
+            <div class =buttons>
+                <button class="button btn-prev">Prev &lt;- </button>
+                <button class="button btn-next">Next -&gt;</button>
+            </div>
+    
+            <img src="./Imagens/pokedex.png" alt="Pokedex" class="pokedex">
+    
+        </main>
+    </div>
 
-            <div class="slide s1">
-                <img src="https://logosmarcas.net/wp-content/uploads/2020/05/Pokemon-Emblema.jpg" alt="Imagem pokemon">
-            </div>
-            <div class="slide">
-                <img src="https://playreplay.com.br/wp-content/uploads/2017/08/pokemon1.jpg" alt="Imagem do jogo">
-            </div>
-            <div class="slide">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaD3aPL0jfJYvIhC8SnMZl2eUJIpeNr75Rug&usqp=CAU" alt="Imagem dos personagens">
-            </div>
-            <div class="slide">
-                <img src="" alt="Imagem das cartas">
-            </div>
-            <div class="slide">
-                <img src="" alt="Imagem pokemon">
-            </div>
-            <div class="slide">
-                <img src="https://logosmarcas.net/wp-content/uploads/2020/05/Pokemon-Emblema.jpg" alt="imagem pokemon">
-            </div>
-
-            <div class="navigation">
-                <label class="barra" for="slide1"></label>
-                <label class="barra" for="slide2"></label>
-                <label class="barra" for="slide3"></label>
-                <label class="barra" for="slide4"></label>
-                <label class="barra" for="slide5"></label>
+    <div class="information">
+        <h2>Pokémon: Jogo para se divertir</h2>
+        <p>This site is part of a college project. In it I decided to create a themed board game. 
+            Creating it was fun and a great learning experience. Pokemon were chosen to be part of this board-style adventure. 
+            If you want to play with the pokedex feel free.   
+            Now, enjoy the game and choose your Pokémon.
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet id recusandae debitis, velit et nam nemo accusantium amet, aliquid, itaque ut in vel adipisci? Consectetur incidunt cupiditate nesciunt officiis temporibus.</p>
+    </div>
+    
+        <div class="regrasJogo" > 
+            <div class="about">
+                <h2>Regras do jogo</h2>
+                <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                    Adipisci laborum, voluptas qui nobis culpa quam, iste doloribus, 
+                    nihil molestiae illo odit distinctio. Dicta, corrupti animi consequuntur distinctio alias perferendis quisquam?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus animi nam aspernatur hic nobis inventore quod minus sint, beatae reprehenderit doloribus ullam dignissimos praesentium cum magnam voluptate blanditiis atque aliquid!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate, dignissimos? Expedita vitae enim corrupti tenetur quasi neque, consequatur perspiciatis dolorum minus possimus voluptates ut atque! Nisi repellat sapiente facere excepturi!</p>
             </div>
         </div>
-    </div>
 
-    <div class="container">
         
-    </div>
+        <div class="jogo-section">
+            <form class="jogo-form">
+                <div class="imagem">
+                    <img src="https://i.redd.it/bkw076ufs2291.jpg" alt="Pikachu">
+                </div>
+                <div class="jogo-header">
+                    <h2>Memory Game</h2>
+                </div>
+                <button type="submit" class="jogo-button">Player</button>
+            </form>
+        </div>
+        
+        <div class="contatos" id="contatos">
+            <h2>Contatos<br>Ana Caroline Pedrosa e Silva</h2>
+            <div class="contatos-icons">
+            <div class="mail">
+                <i data-feather="mail"></i>
+                <p>Silva05@gmail.com</p>
+            </div>
+            <div class="face">
+                <i data-feather="facebook"></i>
+                <p>aninha05</p>
+            </div>
+            <div class="twitter">
+                <i data-feather="linkedin"></i>
+                <p>aninha20</p>
+            </div>
+            <div class="instagram">
+                <i data-feather="instagram"></i>
+                <p>caroline_ana05</p>
+            </div>
+            <div class="phone">
+                <i data-feather="phone"></i>
+                <p>(45)99974897</p>
+            </div>
+        </div>
+             <p>Desenvolvido por Ana Caroline &#169</p>
+        </div>
+    
+        <script>
+            feather.replace()
+          </script>
+ 
 </body>
 </html>
